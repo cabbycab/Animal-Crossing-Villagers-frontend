@@ -25,6 +25,7 @@ export default function SignupPage(props) {
         if(!formValid()) return;
         try {
             await signup(formState);
+            props.handleSignupOrLogin();
         } catch (error) {
             alert(error.message);
         }
