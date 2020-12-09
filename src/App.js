@@ -23,7 +23,7 @@ function App(props) {
 
   return (
     <div className="App">
-        <Header />
+        <Header user={userState.user} />
           <Switch>
             <Route exact path="/" render={ props =>
               <HomePage />
