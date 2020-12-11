@@ -45,33 +45,45 @@ function App(props) {
   return (
     <div className="App">
         <Header user={userState.user} handleLogout={handleLogout} />
+          
           <Switch>
+            
             <Route exact path="/" render={ props =>
               <HomePage />
             } />
+            
             <Route exact path="/villagers" render={ props =>
               getUser() ?
-              <div>
+              
+              <div className="container">
               {villagers.map((villager, idx) => {
-                // let's see what we're getting back from our map function
-                // console.log(villager);
-                // we can look at the console log to see where we need to go next
-                // getting the name is a tricky one, unless you remember you can access an object with bracket notation, like so:
-                console.log(villager.name["name-USen"]);
-        
-                // and return some of that data
-              return <div className="card">{villager.name["name-USen"]}</div>;
+                return <div className="card">  
+                  <img src={`${villagers.img_uri}`} alt=""/>
+                  <h3>{villager.name["name-USen"]}</h3>
+                  <p>
+                    Species: {villager.species}<br/>
+                    Gender: {villager.gender}<br/>
+                    Hobby: {villager.hobby}<br/>
+                    Personality: {villager.personality}
+                  </p>
+              
+              </div>;
               })}
               </div>
+
               :
+
               <Redirect to="/login" />
             } />
+            
             <Route exact path="/login" render={ props =>
               <LoginPage handleSignupOrLogin={handleSignupOrLogin} />
             } />
+            
             <Route exact path="/signup" render={ props =>
               <SignupPage handleSignupOrLogin={handleSignupOrLogin} />
             } />
+            
             </Switch>
         <Footer />
     </div>
