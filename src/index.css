@@ -26,3 +26,12 @@ code {
 .page > h1 {
   margin-bottom: 50px;
 }
+
+#submit {
+  
+  color: white;
+}
+
+.cancel {
+  align-items: center;
+}
