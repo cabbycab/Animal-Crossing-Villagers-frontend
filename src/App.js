@@ -58,13 +58,13 @@ function App(props) {
               <div className="container">
               {villagers.map((villager, idx) => {
                 return <div className="card">  
-                  <img src={`${villagers.img_uri}`} alt=""/>
-                  <h3>{villager.name["name-USen"]}</h3>
                   <p>
-                    Species: {villager.species}<br/>
-                    Gender: {villager.gender}<br/>
-                    Hobby: {villager.hobby}<br/>
-                    Personality: {villager.personality}
+                    <img src={villager.image_uri} alt="villager" />
+                    <h3>{villager.name["name-USen"]}</h3>
+                      Species: {villager.species}<br/>
+                      Gender: {villager.gender}<br/>
+                      Hobby: {villager.hobby}<br/>
+                      Personality: {villager.personality}
                   </p>
               
               </div>;

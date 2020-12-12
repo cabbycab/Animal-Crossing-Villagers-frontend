@@ -1,28 +1,41 @@
 .App {
   min-height: 100vh;
   display: flex;
+  flex-grow: 0;
   flex-direction: column;
-  background-image: url("./images/AnimalCrossingBackground.png");
+  font-family: "Comic Neue";
+  background-image: url("./images/animal.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
-  height: 200px;
+  width: 200px;
+  height: 350px;
   border-radius: 18px;
-  margin: 10px;
+  margin: 15px;
   border: 1px solid grey;
   box-shadow: 1px 1px 8px 1px white;
   font-size: 18px;
   text-transform: capitalize;
-  font-family: "Comic Neue";
-  background-color: fff;
+  /* background-image: url("./images/grass.jpg"); */
 }
 
 img {
-  float: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-color: black;
+  padding: 10px;
+  /* float: left; */
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  margin: 0;
 }
 
 .container {

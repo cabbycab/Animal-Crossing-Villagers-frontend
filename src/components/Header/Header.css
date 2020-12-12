@@ -1,5 +1,5 @@
 .Header {
-    background-color: #5bdbc5;
+    background-color: #3e9f3d;
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
@@ -25,4 +25,8 @@
 
 .NavLink li {
     margin-right: 20px;
+}
+
+h1 {
+    text-shadow: 1px 1px 5px black;
 }
