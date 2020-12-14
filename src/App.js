@@ -38,6 +38,7 @@ function App(props) {
     setVillagers(limitedVillagersArray);
   };
 
+   
   useEffect(() => {
     getVillagers();
   }, []);
