@@ -31,7 +31,8 @@ export default function LoginPage(props) {
     }
     return (
         <main className="page">
-            <h1>Login</h1>
+            <div className="window">
+            <h1 className="name">Login</h1><br/><br/>
             <form onSubmit={handleSubmit} >
                 <div className="form-group">
                     <div className="col-sm-12">
@@ -45,12 +46,15 @@ export default function LoginPage(props) {
                 </div>
                 <div className="form-group" id="submit">
                     <div className="col-sm-12">
-                        <input disabled={!formValid()} value="Login" className="form-control" type="submit"/>
-                        {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
+                        <input disabled={!formValid()} value="Login" className="form-control" type="submit"/> <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <Link to="/" className="cancel">Cancel</Link>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <Link to="/signup">SignUp</Link>
                     </div>
                 </div>
             </form>
+        </div>
         </main>
     );
 };

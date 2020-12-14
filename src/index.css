@@ -27,16 +27,44 @@ code {
   margin-bottom: 50px;
 }
 
-#submit {
-  
-  color: white;
-}
-
 .cancel {
   align-items: center;
 }
 
-.homepage {
+.window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  border-radius: 18px;
+  margin: 15px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 8px 1px white;
+  
+}
+
+.name {
+  color: #3e9f3d;
+  font-family: "Grandstander";
+}
+
+#homepage {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px
+}
+
+.btn {
+  background-color:#3e9f3d;
   color: white;
-  align-items: none;
+  font-weight: bold;
 }

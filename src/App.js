@@ -16,7 +16,7 @@ import axios from "axios";
 function App(props) {
 
   const [ userState, setUserState ] = useState({ user: getUser() });
-  const [villagers, setVillagers] = useState([]);
+  const [ villagers, setVillagers ] = useState([]);
 
   function handleSignupOrLogin() {
     setUserState({ user: getUser() });
@@ -58,14 +58,14 @@ function App(props) {
               <div className="container">
               {villagers.map((villager, idx) => {
                 return <div className="card">  
-                  <p>
+                  <div>
                     <img src={villager.image_uri} alt="villager" />
-                    <h3>{villager.name["name-USen"]}</h3>
-                      Species: {villager.species}<br/>
-                      Gender: {villager.gender}<br/>
-                      Hobby: {villager.hobby}<br/>
-                      Personality: {villager.personality}
-                  </p>
+                    <h3><b>{villager.name["name-USen"]}</b></h3>
+                      <b>Species:</b> {villager.species}<br/>
+                      <b>Gender:</b> {villager.gender}<br/>
+                      <b>Hobby:</b> {villager.hobby}<br/>
+                      <b>Personality:</b> {villager.personality}
+                  </div>
               
               </div>;
               })}

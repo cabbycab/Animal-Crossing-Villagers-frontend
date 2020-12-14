@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
     <header className="Header">
         <Link to="/">
-            <h1>Animal Crossing Villagers</h1>
+            <h1 id="animalCrossingVillagers">Animal Crossing Villagers</h1>
         </Link>
         <nav>
             <ul className="NavLink">
@@ -17,7 +17,8 @@ const Header = (props) => {
                     </>
                     :
                     <>
-                        <li><Link to="/signup">Signup</Link></li>
+                        <li><Link to="/signup">Signup</Link>
+                        </li>
                         <li><Link to="/login">Login</Link></li>
                     </>
                 }
