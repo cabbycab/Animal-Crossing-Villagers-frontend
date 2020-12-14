@@ -1,6 +1,6 @@
 import { setToken, getUserFromToken, removeToken } from "./tokenService";
 
-const BASE_URL = "https://animal-crossing-villagers-dknk.herokuapp.com";
+const BASE_URL = "https://animal-crossing-villagers-dknk.herokuapp.com/api/users";
 
 function signup(user) {
     return fetch(BASE_URL + "/signup", {
