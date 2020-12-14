@@ -24,7 +24,7 @@ A simple web application that allows a logged in user to view all Villagers from
 ![screenshot](./src/images/sc_about.png)
 ![screenshot](./src/images/sc_login.png)
 ![screenshot](./src/images/sc_signup.png)
-![screenshot](./src/images/sc_villagers.png)
+![screenshot](./src/images/sc_villagersbtn.png)
 ![screenshot](./src/images/sc_wishlist.png)
 
 ## Getting Started

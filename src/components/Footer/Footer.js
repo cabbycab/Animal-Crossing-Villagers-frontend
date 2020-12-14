@@ -3,9 +3,9 @@ import "./Footer.css";
 const Footer = (props) => {
     return (
     <footer className="Footer">
-        <p>
+        <div>
             Copyright &copy; My Project {new Date().getFullYear()} All Rights Reserved
-        </p>
+        </div>
     </footer>
     )
 }
