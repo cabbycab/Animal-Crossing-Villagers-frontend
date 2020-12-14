@@ -47,10 +47,10 @@ export default function LoginPage(props) {
                 <div className="form-group" id="submit">
                     <div className="col-sm-12">
                         <input disabled={!formValid()} value="Login" className="form-control" type="submit"/> <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <Link to="/" className="cancel">Cancel</Link>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <Link to="/signup">SignUp</Link>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <Link to="/signup">Sign Up</Link>
                     </div>
                 </div>
             </form>

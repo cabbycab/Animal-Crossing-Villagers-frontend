@@ -12,8 +12,9 @@ const Header = (props) => {
                 {
                     props.user ? 
                     <>
-                        <li><Link to="" onClick={props.handleLogout}>Logout</Link></li>
                         <li><Link to="/villagers">Villagers</Link></li>
+                        <li><Link to="/wishlist">Wish List</Link></li>
+                        <li><Link to="" onClick={props.handleLogout}>Logout</Link></li>
                     </>
                     :
                     <>

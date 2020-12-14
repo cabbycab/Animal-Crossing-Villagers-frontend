@@ -15,7 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* Control of Page */
 .page {
   flex-grow: 1;
   display: flex;
@@ -27,10 +27,7 @@ code {
   margin-bottom: 50px;
 }
 
-.cancel {
-  align-items: center;
-}
-
+/* About, Login, and Sign Up Layout */
 .window {
   display: flex;
   flex-direction: column;
@@ -51,6 +48,7 @@ code {
   font-family: "Grandstander";
 }
 
+/* Home/About Page format */
 #homepage {
   justify-content: center;
   align-items: center;
@@ -63,6 +61,7 @@ p {
   padding: 10px
 }
 
+/* Sign Up Button */
 .btn {
   background-color:#3e9f3d;
   color: white;

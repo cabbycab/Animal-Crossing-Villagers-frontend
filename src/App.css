@@ -1,3 +1,4 @@
+/* Page and Background */
 .App {
   min-height: 100vh;
   display: flex;
@@ -10,12 +11,13 @@
   background-position: center;
 }
 
+/* Character Cards */
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
-  height: 350px;
+  height: 375px;
   border-radius: 18px;
   margin: 15px;
   border: 1px solid grey;
@@ -25,6 +27,7 @@
   background-color: #ecefd6;
 }
 
+/* Images of Villagers */
 img {
   display: flex;
   justify-content: center;
@@ -36,7 +39,7 @@ img {
   object-fit: cover;
   margin: 10px;
 }
-
+/* Container the Villager cards fit into on the page */
 .container {
   padding: 30px;
   display: flex;
@@ -46,7 +49,29 @@ img {
   max-width: 1500px;
 }
 
+/* Villager Names on Cards */
 h3 {
   text-align: center;
   font-family: "Grandstander";
+}
+
+.wishBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #3e9f3d;
+  font-weight: bold;
+  border: 1px solid grey;
+  margin: 18px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.wishBtn:hover {
+  box-shadow: 1px 1px 8px 1px black;
+}
+a:hover {
+  text-decoration: none;
 }

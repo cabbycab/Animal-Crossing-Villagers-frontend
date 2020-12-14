@@ -11,7 +11,7 @@ A simple web application that allows a logged in user to view all Villagers from
 - React.js
 - Mongoose
 - MongoDB
-- Google Fonrts
+- Google Fonts
 - Animal Crossing API
 
 ## WireFrames
@@ -25,6 +25,7 @@ A simple web application that allows a logged in user to view all Villagers from
 ![screenshot](./src/images/sc_login.png)
 ![screenshot](./src/images/sc_signup.png)
 ![screenshot](./src/images/sc_villagers.png)
+![screenshot](./src/images/sc_wishlist.png)
 
 ## Getting Started
 - From the homepage you can either sign up or login.

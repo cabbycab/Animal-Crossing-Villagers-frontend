@@ -34,7 +34,7 @@ export default function SignupPage(props) {
     return (
         <main className="page">
           <div className="window">
-            <h1 className="name">Sign Up</h1> <br/><br/>
+            <h1 className="name">Signup</h1> <br/><br/>
             <form onSubmit={handleSubmit}>
             <div className="form-group">
             <div className="col-sm-12">
@@ -53,7 +53,7 @@ export default function SignupPage(props) {
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input disabled={!formValid()} type="submit" className="btn btn-default" value="Sign Up" />
+              <input disabled={!formValid()} type="submit" className="btn btn-default" value="Signup" />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Link to="/">Cancel</Link>
             </div>

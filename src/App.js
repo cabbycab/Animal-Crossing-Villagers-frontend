@@ -1,12 +1,12 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-// import Villagers from "./pages/Villagers";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import WishListPage from "./pages/WishListPage";
 
-import { Route, Switch, withRouter, Redirect } from "react-router-dom";
+import { Route, Switch, withRouter, Redirect, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getUser, logout } from "./services/userService"
 
@@ -52,24 +52,30 @@ function App(props) {
             <Route exact path="/" render={ props =>
               <HomePage />
             } />
+
+            <Route exact path="/wishlist" render={ props =>
+              <WishListPage />
+            } />
             
             <Route exact path="/villagers" render={ props =>
               getUser() ?
               
               <div className="container">
-              {villagers.map((villager, idx) => {
-                return <div className="card">  
-                  <div>
-                    <img src={villager.image_uri} alt="villager" />
-                    <h3><b>{villager.name["name-USen"]}</b></h3>
-                      <b>Species:</b> {villager.species}<br/>
-                      <b>Gender:</b> {villager.gender}<br/>
-                      <b>Hobby:</b> {villager.hobby}<br/>
-                      <b>Personality:</b> {villager.personality}
-                  </div>
-              
-              </div>;
-              })}
+                {villagers.map((villager, idx) => {
+                  return <div className="card">  
+                    <div>
+                      <img src={villager.image_uri} alt="villager" />
+                      <h3><b>{villager.name["name-USen"]}</b></h3>
+                        <b>Species:</b> {villager.species}<br/>
+                        <b>Gender:</b> {villager.gender}<br/>
+                        <b>Hobby:</b> {villager.hobby}<br/>
+                        <b>Personality:</b> {villager.personality}<br/>
+                        {/* &nbsp;&nbsp;<Link to="/wishlist">Add to Wish List</Link> */}
+                        <Link to="/wishlist">
+                        <button type="submit" className="wishBtn">Add to Wish List</button></Link>
+                    </div>
+                        </div>;
+                })}
               </div>
 
               :
