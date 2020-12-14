@@ -7,7 +7,7 @@ const WishListPage = (props) => {
           <div id="homepage">
             <h1 className="name">Wish List</h1> <br/>
                 <p>
-                    View the Villagers you want to add to your island. Once you have added them to your Island, you can delete them here. <br /><br />
+                    View the Villagers you want to add to your own village. Once you have added them to your village, you can delete them here. <br /><br />
                     View all <Link to="/villagers">Villagers</Link>.
                 </p>
           </div>

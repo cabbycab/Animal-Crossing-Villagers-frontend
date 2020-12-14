@@ -1,7 +1,7 @@
 # Animal Crossing Villagers
 
 ## Introduction
-A simple web application that allows a logged in user to view all Villagers from Animal Crossing.
+A full-stack MERN, single-page application that allows a logged in user to view all Villagers from Animal Crossing.
 
 ## Technologies Used
 - HTML5
