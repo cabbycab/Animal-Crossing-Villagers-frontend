@@ -21,16 +21,17 @@ A simple web application that allows a logged in user to view all Villagers from
 ![wireframe](./src/images/wishlist.png)
 
 ## Screenshots
-![screenshot]
-![screenshot]
-![screenshot]
-![screenshot]
+![screenshot](./src/images/sc_about.png)
+![screenshot](./src/images/sc_login.png)
+![screenshot](./src/images/sc_signup.png)
+![screenshot](./src/images/sc_villagers.png)
 
 ## Getting Started
-
+- From the homepage you can either sign up or login.
+- Once logged in you can view all Villagers from Animal Crossing
 
 ## Unsolved Problems
-
+- Pagination
 
 ## Future Enhancements 
 - Be able to add Villagers to your Wish List
