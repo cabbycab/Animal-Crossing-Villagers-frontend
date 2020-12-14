@@ -28,6 +28,7 @@ A full-stack MERN, single-page application that allows a logged in user to view 
 ![screenshot](./src/images/sc_wishlist.png)
 
 ## Getting Started
+- [Click Here](https://animal-crossing-villagers.netlify.app/) to see the deployed app!
 - From the homepage you can either sign up or login.
 - Once logged in you can view all Villagers from Animal Crossing
 
