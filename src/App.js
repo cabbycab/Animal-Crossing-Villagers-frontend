@@ -70,7 +70,6 @@ function App(props) {
                         <b>Gender:</b> {villager.gender}<br/>
                         <b>Hobby:</b> {villager.hobby}<br/>
                         <b>Personality:</b> {villager.personality}<br/>
-                        {/* &nbsp;&nbsp;<Link to="/wishlist">Add to Wish List</Link> */}
                         <Link to="/wishlist">
                         <button type="submit" className="wishBtn">Add to Wish List</button></Link>
                     </div>

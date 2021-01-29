@@ -1,39 +1,50 @@
 .Header {
-    background-color: #3e9f3d;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 0 18px 18px;
-    font-family: "Comic Neue";
-    box-shadow: 1px 1px 20px 1px black;
+  background-color: #3e9f3d;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 0 18px 18px;
+  font-family: "Comic Neue";
+  box-shadow: 1px 1px 20px 1px black;
 }
 
 .Header a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .NavLink {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 22px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;
 }
 
 .NavLink li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .NavLink li:hover {
-    text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px black;
 }
 
 #animalCrossingVillagers {
-    text-shadow: 1px 1px 5px black;
-    font-family: "Grandstander";
+  text-shadow: 1px 1px 5px black;
+  font-family: "Grandstander";
+}
+
+@media screen and (max-width: 800px) {
+  .Header {
+    height: 150px;
+  }
+  .NavLink {
+    text-align: left;
+    flex-direction: column;
+    width: 150px;
+  }
 }
